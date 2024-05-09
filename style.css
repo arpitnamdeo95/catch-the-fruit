@@ -117,14 +117,14 @@ body {
   position: absolute;
   opacity: 0;
   top: 0;
-  left: 0;
+  left: 0;      
   transform: scale(0);
   transition: transform 0.3s ease-in-out;
 }
 
 .message.visible {
   top: 20%;
-  opacity: 1;
+  opacity: 1;     
   transform: scale(1);
 }
 
@@ -132,19 +132,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 100px;    
   height: 100px;
-  position: absolute;
+  position: absolute;    
   transform: translate(-50%, -50%) scale(1);
-  cursor: pointer;
+  cursor: pointer;      
   transition: transform 0.3s ease-in-out;
 }
 
 .fruit.caught {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);     
 }
 
 .fruit img {
-  width: 100px;
-  height: 100px;
+  width: 100px;     
+  height: 100px;    
 }
