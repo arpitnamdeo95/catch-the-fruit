@@ -70,22 +70,22 @@ body {
 .fruitBtn {
   background-color: transparent;
   border: 3px solid white;
-  border-radius: 10px;
+  border-radius: 10px;     
   color: white;
-  width: 150px;
+  width: 150px;    
   height: 150px;
   cursor: pointer;
+}     
+
+.fruitBtn:hover {    
+  background-color: white;     
+  color: red;        
 }
 
-.fruitBtn:hover {
-  background-color: white;
-  color: red;
-}
-
-.fruitBtn img {
-  width: 100px;
+.fruitBtn img {    
+  width: 100px;        
   height: 100px;
-  object-fit: contain;
+  object-fit: contain;      
 }
 
 /* Game Container */
