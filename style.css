@@ -40,7 +40,7 @@ body {
 .playBtn {
   background-color: white;
   color: red;
-  font-size: 18px;
+  font-size: 18px;     
   padding: 15px 30px;
   border: 2px solid transparent;
   border-radius: 5px;
@@ -48,22 +48,22 @@ body {
 }
 
 .playBtn:hover {
-  border: 2px solid white;
+  border: 2px solid white;      
   background: transparent;
   color: white;
 }
 
 .playBtn:active {
-  transform: scale(0.95);
+  transform: scale(0.95);    
 }
 
 /* Fruit Selection Container */
 
 .fruitList {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;     
   justify-content: center;
-  list-style: none;
+  list-style: none;  
   gap: 20px;
 }
 
