@@ -66,29 +66,29 @@ function createFruit() {
 function getRandomLocation() {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const x = Math.random() * (width - 200) + 100;
+  const x = Math.random() * (width - 200) + 100;   
   const y = Math.random() * (height - 200) + 100;
   return { x, y };
 }
 
 // when we catch the fruit it calls the increaseScore function and add caught class to remove that fruit and also calls the addFruits function.
-function catchFruit() {
+function catchFruit() {     
   increaseScore();
-  this.classList.add("caught");
+  this.classList.add("caught");    
   addFruits();
 }
 
 // It will call createFruit function 2 times with delay 1000ms and 1500ms.
 function addFruits() {
   setTimeout(createFruit, 1000);
-  setTimeout(createFruit, 1500);
+  setTimeout(createFruit, 1500);     
 }
 
 // Updates the score and it will display a message after reaching score greater than 20.
 function increaseScore() {
   score++;
-  if (score > 20) {
-    messageEl.classList.add("visible");
-  }
-  scoreEl.innerHTML = `Score: ${score}`;
-}
+  if (score > 20) {    
+    messageEl.classList.add("visible");     
+  }    
+  scoreEl.innerHTML = `Score: ${score}`;      
+}       
