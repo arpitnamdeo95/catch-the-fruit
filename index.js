@@ -40,7 +40,7 @@ function startGame() {
 function increaseTime() {
   let min = Math.floor(seconds / 60);
   let sec = seconds % 60;
-  m = min < 10 ? `0${min}` : min;
+  m = min < 10 ? `0${min}` : min;      
   s = sec < 10 ? `0${sec}` : sec;
   timeEl.innerHTML = `Time: ${m}:${s}`;
   seconds++;
@@ -50,13 +50,13 @@ function increaseTime() {
 function createFruit() {
   const fruit = document.createElement("div");
   fruit.classList.add("fruit");
-  const { x, y } = getRandomLocation();
-  fruit.style.top = `${y}px`;
-  fruit.style.left = `${x}px`;
+  const { x, y } = getRandomLocation();       
+  fruit.style.top = `${y}px`;     
+  fruit.style.left = `${x}px`;     
   fruit.innerHTML = `<img src="${selectedFruit.src}" alt="${
-    selectedFruit.alt
-  }" style="transform: rotate(${Math.random() * 360}deg)" />`;
-  gameContainerEl.appendChild(fruit);
+    selectedFruit.alt    
+  }" style="transform: rotate(${Math.random() * 360}deg)" />`;      
+  gameContainerEl.appendChild(fruit);      
 
   // When we click on any of the fruits then it will call the catchFruit function.
   fruit.addEventListener("click", catchFruit);
